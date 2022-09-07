@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#CDDC39"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/textViewtitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="59dp"
+        android:text="Calculator"
+        android:textColor="#0C0C0C"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/editTextTextfirstnumber"
+        android:layout_width="183dp"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/textViewtitle"
+        android:layout_marginTop="25dp"
+        android:ems="10"
+        android:hint="first number"
+         />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="129dp"
+        android:layout_height="191dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="39dp"
+        android:layout_marginEnd="33dp"
+        app:srcCompat="@drawable/greencalculator" />
+
+    <EditText
+        android:id="@+id/editTextTextseondnumber"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/editTextTextfirstnumber"
+        android:layout_marginBottom="-45dp"
+        android:ems="10"
+        android:hint="second number"
+        android:inputType="textPersonName" />
+
+    <TextView
+        android:id="@+id/Textviewresult"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/editTextTextseondnumber"
+        android:layout_marginBottom="-34dp"
+        android:text="result"
+        android:textColor="#1B1515"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/Textviewresult"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="43dp"
+        android:text="calculate" />
+
+</RelativeLayout>
